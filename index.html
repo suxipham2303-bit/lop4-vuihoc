@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Lớp 4 vui học</title><style>body{font:18px/1.6 Arial,sans-serif;background:#f2f7f1;color:#183930;margin:0;padding:24px}main{max-width:540px;margin:10vh auto;background:white;padding:36px;border-radius:24px}a{display:block;text-align:center;background:#206448;color:white;padding:15px;border-radius:12px;text-decoration:none}p{color:#52685b}small{font-size:14px}</style></head><body><main><span>🌱 LỚP 4 VUI HỌC</span><h1>Cùng ôn lại bài học nhé!</h1><p>Toán · Tiếng Việt · Khoa học · Lịch sử và Địa lí</p><a id="enter" href="#">Vào làm bài →</a><p id="status"><small>Trang chưa được cấu hình đường dẫn lớp học.</small></p></main><script>
+// Thay chuỗi dưới đây bằng URL Web App đã triển khai, kết thúc bằng /exec.
+const APP_URL = 'https://script.google.com/macros/s/AKfycbwjiptBnCWOZatJJsBPdfWWzwBylFf0a_LWOstSf5V7x4mo-kodKr2PDey3xpcaq687/exec';
+const link=document.getElementById('enter');
+if(/^https:\/\/script\.google\.com\/macros\/s\/[A-Za-z0-9_-]+\/exec$/.test(APP_URL)){link.href=APP_URL;document.getElementById('status').textContent='Em sẽ chuyển đến trang lớp học và chỉ cần nhập họ tên.';}else{link.setAttribute('aria-disabled','true');link.onclick=e=>{e.preventDefault();document.getElementById('status').textContent='Thầy/cô cần cấu hình URL Apps Script trước khi chia sẻ trang này.';};}
+</script></body></html>
